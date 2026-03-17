@@ -1,0 +1,16 @@
+
+
+conda 环境：
+conda create --prefix ./env_name python=3.9.25
+
+# CUDA 11.7
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+
+pip install numpy==1.25.2
+pip install scipy==1.11.4
+
+pip install tqdm==4.67.3
+
+pip install json5==0.12.1
+
+pip install timm==0.6.12
