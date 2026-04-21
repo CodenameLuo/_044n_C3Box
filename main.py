@@ -1,6 +1,5 @@
 import os
 import torch
-os.environ['CUDA_VISIBLE_DEVICES'] = "1"
 import json
 import argparse
 from trainer import train
