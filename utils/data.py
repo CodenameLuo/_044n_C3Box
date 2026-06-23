@@ -77,10 +77,8 @@ class iCIFAR100(iData):
     def download_data(self,preprocess=None):
        # trainset = datasets.CIFAR100(root='"./data"', train=True, download=True)
        # testset = datasets.CIFAR100(root='"./data"', train=False, download=True)
-        # trainset = datasets.CIFAR100(root="[DATA-PATH]/train/", train=True, download=False)
-        # testset = datasets.CIFAR100(root="[DATA-PATH]/val/", train=False, download=False)
-        trainset = datasets.CIFAR100(root="./data/train/", train=True, download=False)
-        testset = datasets.CIFAR100(root="./data/val/", train=False, download=False)
+        trainset = datasets.CIFAR100(root="[DATA-PATH]/train/", train=True, download=False)
+        testset = datasets.CIFAR100(root="[DATA-PATH]/val/", train=False, download=False)
         self.train_data, self.train_targets = trainset.data, np.array(trainset.targets)
         self.test_data, self.test_targets = testset.data, np.array(testset.targets)
 
@@ -128,8 +126,10 @@ class iCIFAR224(iData):
     class_order = np.arange(100).tolist()
 
     def download_data(self):
-        train_dataset = datasets.cifar.CIFAR100("[DATA-PATH]/train/", train=True, download=True)
-        test_dataset = datasets.cifar.CIFAR100("[DATA-PATH]/val/", train=False, download=True)
+        # train_dataset = datasets.cifar.CIFAR100("[DATA-PATH]/train/", train=True, download=True)
+        # test_dataset = datasets.cifar.CIFAR100("[DATA-PATH]/val/", train=False, download=True)
+        train_dataset = datasets.cifar.CIFAR100("./data/train/", train=True, download=True)
+        test_dataset = datasets.cifar.CIFAR100("./data/val/", train=False, download=True)
         self.train_data, self.train_targets = train_dataset.data, np.array(
             train_dataset.targets
         )
