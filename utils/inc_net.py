@@ -995,11 +995,18 @@ class IncrementalNet(BaseNet):
         return fc
 
     def forward(self, x):
-        x = self.model(x)
-        out = self.fc(x[0])
-       # out = self.fc(x["features"])
-        out["features"] = x[0]
-        # out.update(x)
+        #     x = self.model(x)
+        #     out = self.fc(x[0])
+        #    # out = self.fc(x["features"])
+        #     out["features"] = x[0]
+        #     # out.update(x)
+
+        # CLIP 图像编码 → [B,512]；.float() 防 fp16/autocast 与 fp32 fc 冲突
+        x = self.model.encode_image(x).float()
+        # SimpleLinear 返回 {"logits": ...}
+        out = self.fc(x)
+        out["features"] = x
+
         if hasattr(self, "gradcam") and self.gradcam:
             out["gradcam_gradients"] = self._gradcam_gradients
             out["gradcam_activations"] = self._gradcam_activations
