@@ -9,12 +9,12 @@ def get_model(model_name, args):
     elif name =="zs_clip":
         from models.zs_clip import Learner
         return Learner(args)
-    elif name == "coop":
-        from models.coop_model import Learner
-        return Learner(args)
-    elif name == "l2p_without":
-        from models.l2p_without import Learner
-        return Learner(args)
+    # elif name == "coop":
+    #     from models.coop_model import Learner
+    #     return Learner(args)
+    # elif name == "l2p_without":
+    #     from models.l2p_without import Learner
+    #     return Learner(args)
     elif name == "rapf":
         from models.rapf import Learner
         return Learner(args)

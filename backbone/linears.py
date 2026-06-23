@@ -2,7 +2,8 @@ import math
 import torch
 from torch import nn
 from torch.nn import functional as F
-from timm.layers import trunc_normal_
+# from timm.layers import trunc_normal_
+from timm.models.layers import trunc_normal_
 
 from copy import deepcopy
 

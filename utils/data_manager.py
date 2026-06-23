@@ -9,7 +9,7 @@ from utils.data import iCIFAR10, iCIFAR100, iImageNet100, iImageNet1000, iCIFAR2
     Aircraft,UCF101,StanfordCars, SUN, TV100
 import json
 import torch
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 # from PIL import ImageFile
 # ImageFile.LOAD_TRUNCATED_IMAGES = True
 
