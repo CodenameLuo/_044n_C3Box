@@ -66,6 +66,8 @@ def _train(args):
 
         print('Average Accuracy (CNN):', sum(cnn_curve["top1"])/len(cnn_curve["top1"]))
         logging.info("Average Accuracy (CNN): {}".format(sum(cnn_curve["top1"])/len(cnn_curve["top1"])))
+
+        break
     
 def _set_device(args):
     device_type = args["device"]

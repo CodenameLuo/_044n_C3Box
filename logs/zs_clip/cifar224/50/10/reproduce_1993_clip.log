@@ -1,0 +1,107 @@
+2026-06-23 20:40:49,984 [trainer.py] => config: ./exps/zs_clip.json
+2026-06-23 20:40:49,985 [trainer.py] => prefix: reproduce
+2026-06-23 20:40:49,985 [trainer.py] => dataset: cifar224
+2026-06-23 20:40:49,985 [trainer.py] => memory_size: 0
+2026-06-23 20:40:49,985 [trainer.py] => memory_per_class: 0
+2026-06-23 20:40:49,985 [trainer.py] => fixed_memory: False
+2026-06-23 20:40:49,985 [trainer.py] => shuffle: True
+2026-06-23 20:40:49,985 [trainer.py] => init_cls: 50
+2026-06-23 20:40:49,986 [trainer.py] => increment: 10
+2026-06-23 20:40:49,986 [trainer.py] => model_name: zs_clip
+2026-06-23 20:40:49,986 [trainer.py] => backbone_type: clip
+2026-06-23 20:40:49,986 [trainer.py] => device: [device(type='cuda', index=0)]
+2026-06-23 20:40:49,986 [trainer.py] => seed: 1993
+2026-06-23 20:40:49,986 [trainer.py] => total_class_num: 100
+2026-06-23 20:40:51,706 [data_manager.py] => [68, 56, 78, 8, 23, 84, 90, 65, 74, 76, 40, 89, 3, 92, 55, 9, 26, 80, 43, 38, 58, 70, 77, 1, 85, 19, 17, 50, 28, 53, 13, 81, 45, 82, 6, 59, 83, 16, 15, 44, 91, 41, 72, 60, 79, 52, 20, 10, 31, 54, 37, 95, 14, 71, 96, 98, 97, 2, 64, 66, 42, 22, 35, 86, 24, 34, 87, 21, 99, 0, 88, 27, 18, 94, 11, 12, 47, 25, 30, 46, 62, 69, 36, 61, 7, 63, 75, 5, 32, 4, 51, 48, 73, 93, 39, 67, 29, 49, 57, 33]
+2026-06-23 20:40:52,651 [instantiator.py] => Created a temporary directory at /tmp/tmpvzr_idoe
+2026-06-23 20:40:52,652 [instantiator.py] => Writing /tmp/tmpvzr_idoe/_remote_module_non_scriptable.py
+2026-06-23 20:40:52,896 [factory.py] => Loaded ViT-B-16 model config.
+2026-06-23 20:40:55,075 [factory.py] => Loading pretrained ViT-B-16 weights (laion400m_e32).
+2026-06-23 20:40:55,483 [factory.py] => Loaded ViT-B-16 model config.
+2026-06-23 20:40:57,465 [factory.py] => Loading pretrained ViT-B-16 weights (laion400m_e32).
+2026-06-23 20:40:58,181 [zs_clip.py] => Learning on 0-50
+2026-06-23 20:41:17,281 [trainer.py] => CNN: {'total': 81.06, '00-09': 85.1, '10-19': 78.3, '20-29': 83.5, '30-39': 78.2, '40-49': 80.2, 'old': 0, 'new': 81.06, 'harmonic': 0.0}
+2026-06-23 20:41:17,282 [trainer.py] => CNN top1 curve: [81.06]
+2026-06-23 20:41:17,282 [trainer.py] => CNN top5 curve: [96.5]
+
+2026-06-23 20:41:17,283 [trainer.py] => Average Accuracy (CNN): 81.06
+2026-06-23 20:41:17,286 [zs_clip.py] => Learning on 50-60
+2026-06-23 20:42:00,606 [trainer.py] => config: ./exps/zs_clip.json
+2026-06-23 20:42:00,607 [trainer.py] => prefix: reproduce
+2026-06-23 20:42:00,607 [trainer.py] => dataset: cifar224
+2026-06-23 20:42:00,607 [trainer.py] => memory_size: 0
+2026-06-23 20:42:00,607 [trainer.py] => memory_per_class: 0
+2026-06-23 20:42:00,607 [trainer.py] => fixed_memory: False
+2026-06-23 20:42:00,607 [trainer.py] => shuffle: True
+2026-06-23 20:42:00,607 [trainer.py] => init_cls: 50
+2026-06-23 20:42:00,607 [trainer.py] => increment: 10
+2026-06-23 20:42:00,607 [trainer.py] => model_name: zs_clip
+2026-06-23 20:42:00,607 [trainer.py] => backbone_type: clip
+2026-06-23 20:42:00,607 [trainer.py] => device: [device(type='cuda', index=0)]
+2026-06-23 20:42:00,607 [trainer.py] => seed: 1993
+2026-06-23 20:42:00,607 [trainer.py] => total_class_num: 100
+2026-06-23 20:42:02,297 [data_manager.py] => [68, 56, 78, 8, 23, 84, 90, 65, 74, 76, 40, 89, 3, 92, 55, 9, 26, 80, 43, 38, 58, 70, 77, 1, 85, 19, 17, 50, 28, 53, 13, 81, 45, 82, 6, 59, 83, 16, 15, 44, 91, 41, 72, 60, 79, 52, 20, 10, 31, 54, 37, 95, 14, 71, 96, 98, 97, 2, 64, 66, 42, 22, 35, 86, 24, 34, 87, 21, 99, 0, 88, 27, 18, 94, 11, 12, 47, 25, 30, 46, 62, 69, 36, 61, 7, 63, 75, 5, 32, 4, 51, 48, 73, 93, 39, 67, 29, 49, 57, 33]
+2026-06-23 20:42:02,784 [instantiator.py] => Created a temporary directory at /tmp/tmpquyqepx8
+2026-06-23 20:42:02,785 [instantiator.py] => Writing /tmp/tmpquyqepx8/_remote_module_non_scriptable.py
+2026-06-23 20:42:02,932 [factory.py] => Loaded ViT-B-16 model config.
+2026-06-23 20:42:05,197 [factory.py] => Loading pretrained ViT-B-16 weights (laion400m_e32).
+2026-06-23 20:42:05,590 [factory.py] => Loaded ViT-B-16 model config.
+2026-06-23 20:42:07,616 [factory.py] => Loading pretrained ViT-B-16 weights (laion400m_e32).
+2026-06-23 20:42:08,352 [zs_clip.py] => Learning on 0-50
+2026-06-23 20:42:22,779 [trainer.py] => CNN: {'total': 81.06, '00-09': 85.1, '10-19': 78.3, '20-29': 83.5, '30-39': 78.2, '40-49': 80.2, 'old': 0, 'new': 81.06, 'harmonic': 0.0}
+2026-06-23 20:42:22,779 [trainer.py] => CNN top1 curve: [81.06]
+2026-06-23 20:42:22,779 [trainer.py] => CNN top5 curve: [96.5]
+
+2026-06-23 20:42:22,779 [trainer.py] => Average Accuracy (CNN): 81.06
+2026-06-23 20:42:22,780 [zs_clip.py] => Learning on 50-60
+2026-06-23 20:42:39,708 [trainer.py] => CNN: {'total': 79.68, '00-09': 84.6, '10-19': 77.0, '20-29': 82.6, '30-39': 77.5, '40-49': 78.4, '50-59': 78.0, 'old': 80.02, 'new': 78.0, 'harmonic': 79.0}
+2026-06-23 20:42:39,708 [trainer.py] => CNN top1 curve: [81.06, 79.68]
+2026-06-23 20:42:39,708 [trainer.py] => CNN top5 curve: [96.5, 95.82]
+
+2026-06-23 20:42:39,709 [trainer.py] => Average Accuracy (CNN): 80.37
+2026-06-23 20:42:39,710 [zs_clip.py] => Learning on 60-70
+2026-06-23 20:42:59,329 [trainer.py] => CNN: {'total': 78.39, '00-09': 82.3, '10-19': 75.4, '20-29': 81.2, '30-39': 75.1, '40-49': 77.9, '50-59': 74.3, '60-69': 82.5, 'old': 77.7, 'new': 82.5, 'harmonic': 80.03}
+2026-06-23 20:42:59,330 [trainer.py] => CNN top1 curve: [81.06, 79.68, 78.39]
+2026-06-23 20:42:59,330 [trainer.py] => CNN top5 curve: [96.5, 95.82, 95.11]
+
+2026-06-23 20:42:59,330 [trainer.py] => Average Accuracy (CNN): 79.71
+2026-06-23 20:42:59,331 [zs_clip.py] => Learning on 70-80
+2026-06-23 20:43:21,584 [trainer.py] => CNN: {'total': 75.85, '00-09': 81.8, '10-19': 74.9, '20-29': 80.8, '30-39': 74.8, '40-49': 76.4, '50-59': 70.4, '60-69': 81.0, '70-79': 66.7, 'old': 77.16, 'new': 66.7, 'harmonic': 71.55}
+2026-06-23 20:43:21,584 [trainer.py] => CNN top1 curve: [81.06, 79.68, 78.39, 75.85]
+2026-06-23 20:43:21,584 [trainer.py] => CNN top5 curve: [96.5, 95.82, 95.11, 94.26]
+
+2026-06-23 20:43:21,584 [trainer.py] => Average Accuracy (CNN): 78.745
+2026-06-23 20:43:21,585 [zs_clip.py] => Learning on 80-90
+2026-06-23 20:43:46,936 [trainer.py] => CNN: {'total': 72.56, '00-09': 80.2, '10-19': 72.2, '20-29': 76.3, '30-39': 73.5, '40-49': 72.9, '50-59': 68.6, '60-69': 77.8, '70-79': 66.1, '80-89': 65.4, 'old': 73.45, 'new': 65.4, 'harmonic': 69.19}
+2026-06-23 20:43:46,936 [trainer.py] => CNN top1 curve: [81.06, 79.68, 78.39, 75.85, 72.56]
+2026-06-23 20:43:46,936 [trainer.py] => CNN top5 curve: [96.5, 95.82, 95.11, 94.26, 93.07]
+
+2026-06-23 20:43:46,936 [trainer.py] => Average Accuracy (CNN): 77.50800000000001
+2026-06-23 20:43:46,937 [zs_clip.py] => Learning on 90-100
+2026-06-23 20:44:14,877 [trainer.py] => CNN: {'total': 71.38, '00-09': 79.1, '10-19': 71.8, '20-29': 74.3, '30-39': 72.6, '40-49': 72.3, '50-59': 68.1, '60-69': 76.7, '70-79': 64.0, '80-89': 64.5, '90-99': 70.4, 'old': 71.49, 'new': 70.4, 'harmonic': 70.94}
+2026-06-23 20:44:14,877 [trainer.py] => CNN top1 curve: [81.06, 79.68, 78.39, 75.85, 72.56, 71.38]
+2026-06-23 20:44:14,878 [trainer.py] => CNN top5 curve: [96.5, 95.82, 95.11, 94.26, 93.07, 92.15]
+
+2026-06-23 20:44:14,878 [trainer.py] => Average Accuracy (CNN): 76.48666666666666
+2026-06-24 19:52:24,416 [trainer.py] => config: ./exps/zs_clip.json
+2026-06-24 19:52:24,417 [trainer.py] => prefix: reproduce
+2026-06-24 19:52:24,417 [trainer.py] => dataset: cifar224
+2026-06-24 19:52:24,417 [trainer.py] => memory_size: 0
+2026-06-24 19:52:24,417 [trainer.py] => memory_per_class: 0
+2026-06-24 19:52:24,417 [trainer.py] => fixed_memory: False
+2026-06-24 19:52:24,417 [trainer.py] => shuffle: True
+2026-06-24 19:52:24,417 [trainer.py] => init_cls: 50
+2026-06-24 19:52:24,418 [trainer.py] => increment: 10
+2026-06-24 19:52:24,418 [trainer.py] => model_name: zs_clip
+2026-06-24 19:52:24,418 [trainer.py] => backbone_type: clip
+2026-06-24 19:52:24,418 [trainer.py] => device: [device(type='cuda', index=0)]
+2026-06-24 19:52:24,418 [trainer.py] => seed: 1993
+2026-06-24 19:52:24,418 [trainer.py] => total_class_num: 100
+2026-06-24 19:52:26,114 [data_manager.py] => [68, 56, 78, 8, 23, 84, 90, 65, 74, 76, 40, 89, 3, 92, 55, 9, 26, 80, 43, 38, 58, 70, 77, 1, 85, 19, 17, 50, 28, 53, 13, 81, 45, 82, 6, 59, 83, 16, 15, 44, 91, 41, 72, 60, 79, 52, 20, 10, 31, 54, 37, 95, 14, 71, 96, 98, 97, 2, 64, 66, 42, 22, 35, 86, 24, 34, 87, 21, 99, 0, 88, 27, 18, 94, 11, 12, 47, 25, 30, 46, 62, 69, 36, 61, 7, 63, 75, 5, 32, 4, 51, 48, 73, 93, 39, 67, 29, 49, 57, 33]
+2026-06-24 19:52:27,084 [instantiator.py] => Created a temporary directory at /tmp/tmp2srd7g1a
+2026-06-24 19:52:27,085 [instantiator.py] => Writing /tmp/tmp2srd7g1a/_remote_module_non_scriptable.py
+2026-06-24 19:52:27,330 [factory.py] => Loaded ViT-B-16 model config.
+2026-06-24 19:52:29,588 [factory.py] => Loading pretrained ViT-B-16 weights (laion400m_e32).
+2026-06-24 19:52:30,014 [factory.py] => Loaded ViT-B-16 model config.
+2026-06-24 19:52:31,994 [factory.py] => Loading pretrained ViT-B-16 weights (laion400m_e32).
+2026-06-24 19:52:32,867 [zs_clip.py] => Learning on 0-50

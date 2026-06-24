@@ -66,5 +66,14 @@ def get_model(model_name, args):
     elif name == "aper_finetune":
         from models.aper_finetune import Learner
         return Learner(args)
+
+    # ======================================
+
+    elif name == "finetune_my_modified":
+        from models.finetune_my_modified import Learner
+        return Learner(args)
+
+    # ======================================
+
     else:
         assert 0
